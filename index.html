@@ -3,287 +3,629 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>B&amp;C Consult | Academic &amp; Professional Research Services</title>
-  <meta name="description" content="B&amp;C Consult — expert thesis writing, dissertation support, research papers, and professional document services. Inquire and pay online." />
-  <meta property="og:title" content="B&amp;C Consult | Academic &amp; Professional Research Services" />
-  <meta property="og:description" content="Expert thesis writing, research papers, data analysis, and professional documents. Trusted by students and organisations worldwide." />
+  <title>Scriptorium — The Academic Manuscript Forge</title>
+  <meta name="description" content="Scriptorium: Transform your academic thesis into a publication-ready manuscript. Browse 30+ journals, view guidelines, and use our step-by-step conversion tool." />
+  <meta property="og:title" content="Scriptorium — Where Theses Become Manuscripts" />
+  <meta property="og:description" content="Convert any academic thesis into a journal-ready manuscript. Browse guidelines for Nature, NEJM, PNAS, JAMA, IEEE, ACS, and 30+ more leading journals." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a class="logo" href="#home">
-        <span class="logo-brand">B<span class="logo-amp">&amp;</span>C</span>
-        <span class="logo-name">Consult</span>
-      </a>
-      <nav id="navEl">
-        <ul class="nav-links">
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#process" class="nav-link">How It Works</a></li>
-          <li><a href="#pricing" class="nav-link">Pricing</a></li>
-          <li><a href="#inquire" class="nav-link">Inquire</a></li>
-          <li><a href="#pay" class="nav-link">Pay</a></li>
-        </ul>
-      </nav>
-      <a href="#inquire" class="btn btn-gold nav-cta">Get a Quote</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar-inner">
+    <a href="#hero" class="logo" data-nav="hero">
+      <div class="logo-icon">📜</div>
+      <div>
+        <span class="logo-text">Scriptorium</span>
+        <span class="logo-sub">Academic Manuscript Forge</span>
+      </div>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <button class="nav-link" data-nav="features">Features</button>
+      <button class="nav-link" data-nav="how-it-works">How It Works</button>
+      <button class="nav-link" data-nav="converter">Converter</button>
+      <button class="nav-link" data-nav="journals">Journal Library</button>
+      <button class="nav-link" data-nav="ref-styles">Citation Styles</button>
+      <button class="nav-cta btn" data-nav="converter">Start Converting →</button>
     </div>
-  </header>
 
-  <main>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="home">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-body">
-        <span class="eyebrow">Trusted Research Consultancy</span>
-        <h1>Academic Excellence,<br><em>Professionally Delivered</em></h1>
-        <p class="hero-sub">From thesis writing to professional reports — expert guidance for students, researchers, and organisations who demand quality.</p>
-        <div class="hero-btns">
-          <a href="#inquire" class="btn btn-gold btn-lg">Start Your Inquiry</a>
-          <a href="#services" class="btn btn-ghost btn-lg">Explore Services</a>
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Est. in the tradition of scholarly excellence
+      </div>
+
+      <h1>
+        <span class="subtitle">Introducing</span>
+        <span class="gold-text">Scriptorium</span>
+      </h1>
+
+      <p class="hero-desc">
+        The scholarly alchemist's tool for transforming doctoral theses and academic dissertations
+        into publication-ready manuscripts. Navigate journal guidelines, convert citation styles,
+        and structure your research for the world's leading publications.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" data-nav="converter">
+          ✦ Begin Conversion
+        </button>
+        <button class="btn btn-outline btn-lg" data-nav="journals">
+          Browse Journals →
+        </button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">32+</span>
+          <span class="stat-label">Journals Covered</span>
         </div>
-        <div class="hero-stats" aria-label="Key statistics">
-          <div class="hstat"><strong>500+</strong><span>Projects Completed</span></div>
-          <div class="hstat-sep" aria-hidden="true"></div>
-          <div class="hstat"><strong>98%</strong><span>Client Satisfaction</span></div>
-          <div class="hstat-sep" aria-hidden="true"></div>
-          <div class="hstat"><strong>10+</strong><span>Years Experience</span></div>
+        <div class="stat">
+          <span class="stat-num">10</span>
+          <span class="stat-label">Disciplines</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">8</span>
+          <span class="stat-label">Citation Styles</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Possibilities</span>
         </div>
       </div>
-      <a href="#services" class="scroll-down" aria-label="Scroll to services">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== SERVICES ===== -->
-    <section class="section services-section" id="services">
-      <div class="container">
-        <div class="section-hd">
-          <span class="eyebrow dark">What We Offer</span>
-          <h2>Our Services</h2>
-          <p>Comprehensive academic and professional writing support, tailored to every level and deadline.</p>
+<!-- ═══════════════════════════════════════════════════════
+     FEATURES
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">What Scriptorium Offers</span>
+      <h2>Every Tool the Scholar Needs</h2>
+      <p>From first draft to submission-ready — a complete manuscript conversion environment grounded in actual journal guidelines.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="grid-3" style="gap:20px">
+      <div class="card feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>Journal Library</h3>
+        <p>Browse 32+ leading journals across 10 disciplines — from Nature and NEJM to PLOS ONE and JMLR. Each entry includes real submission guidelines, word limits, and manuscript structures.</p>
+      </div>
+
+      <div class="card feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Thesis Converter</h3>
+        <p>Paste your thesis chapters into our step-by-step wizard. The converter maps thesis sections to manuscript sections, flags word limit violations, and generates a structured outline.</p>
+      </div>
+
+      <div class="card feature-card">
+        <div class="feature-icon">✦</div>
+        <h3>Conversion Checklist</h3>
+        <p>Receive a personalised checklist of every change you need to make — abstract trimming, citation style conversion, structured abstract requirements, and journal-specific notes.</p>
+      </div>
+
+      <div class="card feature-card">
+        <div class="feature-icon">📐</div>
+        <h3>Manuscript Structures</h3>
+        <p>View the exact section sequence required by each journal, complete with notes on length, format, and content for each section — from Title to Data Availability Statement.</p>
+      </div>
+
+      <div class="card feature-card">
+        <div class="feature-icon">🔖</div>
+        <h3>Citation Style Guide</h3>
+        <p>Reference examples for all 8 major academic citation styles — APA 7th, MLA 9th, Chicago, Vancouver, IEEE, ACS, Nature, and AMA — with formatted examples for each.</p>
+      </div>
+
+      <div class="card feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>Expert Conversion Tips</h3>
+        <p>Each journal entry includes 5–8 thesis-specific conversion tips written for scholars — actionable advice on what to cut, reframe, add, or restructure for that specific publication.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">The Process</span>
+      <h2>From Thesis to Manuscript in Four Steps</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="step-num">I</div>
+        <h3>Choose Your Discipline</h3>
+        <p>Select your thesis type — STEM, Humanities, Social Sciences — to activate the correct section templates and conversion logic.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">II</div>
+        <h3>Paste Your Chapters</h3>
+        <p>Add your abstract, introduction, methods, results, and discussion directly into the converter. Word counts are tracked live.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">III</div>
+        <h3>Select a Target Journal</h3>
+        <p>Choose from 32 leading journals. The tool instantly adjusts guidelines, word limits, and section requirements to match.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">IV</div>
+        <h3>Receive Your Outline</h3>
+        <p>Download a complete manuscript outline with your content mapped to journal sections, plus a checklist of every required change.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CONVERTER
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="converter">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">The Conversion Tool</span>
+      <h2>Thesis → Manuscript Converter</h2>
+      <p>Follow the four-step wizard to map your thesis to your target journal's requirements.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="converter-wrapper">
+      <!-- LEFT: Wizard Panel -->
+      <div class="converter-panel">
+        <div class="panel-header">
+          <span class="panel-title">📜 Manuscript Wizard</span>
+          <span id="stepCounter" style="font-size:0.78rem;color:var(--text-muted)">Step 1 of 4</span>
         </div>
-        <div class="services-grid">
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">📝</div><h3>Thesis Writing</h3><p>End-to-end thesis writing from proposal to final chapter — structured, well-researched, and formatted to your institution's standards.</p></article>
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">🎓</div><h3>Dissertation Support</h3><p>Chapter editing, structural feedback, and expert guidance to strengthen your dissertation at any stage of completion.</p></article>
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">📄</div><h3>Research Papers</h3><p>Journal articles, conference papers, and academic essays written to publication-ready standards with rigorous referencing.</p></article>
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">📚</div><h3>Literature Review</h3><p>Systematic and narrative literature reviews that demonstrate mastery of your field and identify research gaps.</p></article>
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">📊</div><h3>Data Analysis</h3><p>Statistical analysis using SPSS, R, or Python — with clear interpretation, visualisation, and professional reporting.</p></article>
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">💼</div><h3>Professional Reports</h3><p>Business reports, white papers, technical reports, and executive summaries crafted for corporate and institutional clients.</p></article>
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">📋</div><h3>Research Proposals</h3><p>Compelling grant applications and academic research proposals that win funding and institutional approval.</p></article>
-          <article class="srv-card reveal"><div class="srv-icon" aria-hidden="true">✏️</div><h3>Proofreading &amp; Editing</h3><p>Grammar, clarity, flow, and citation checks — we polish your existing work to publication-ready perfection.</p></article>
+        <div class="panel-body">
+
+          <!-- Step Indicators -->
+          <div class="wizard-steps" aria-label="Wizard progress">
+            <div class="wizard-step-item active" data-step="1">
+              <div class="wizard-step-circle">1</div>
+              <span class="wizard-step-label">Thesis Type</span>
+            </div>
+            <div class="wizard-step-item" data-step="2">
+              <div class="wizard-step-circle">2</div>
+              <span class="wizard-step-label">Your Content</span>
+            </div>
+            <div class="wizard-step-item" data-step="3">
+              <div class="wizard-step-circle">3</div>
+              <span class="wizard-step-label">Select Journal</span>
+            </div>
+            <div class="wizard-step-item" data-step="4">
+              <div class="wizard-step-circle">4</div>
+              <span class="wizard-step-label">Generate</span>
+            </div>
+          </div>
+
+          <!-- Wizard Content -->
+          <div class="wizard-content">
+
+            <!-- STEP 1: Thesis Type -->
+            <div class="wizard-pane active" id="pane-1">
+              <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:6px">Step 1</div>
+              <h3 style="margin-bottom:18px">What type of thesis are you converting?</h3>
+              <div class="radio-group">
+                <label class="radio-option" data-thesis-type="stem">
+                  <input type="radio" name="thesisType" value="stem" />
+                  <div class="radio-dot"></div>
+                  <div class="radio-option-text">
+                    <span class="opt-label">STEM (Science, Technology, Engineering, Medicine)</span>
+                    <span class="opt-desc">Empirical research with methods, results, and discussion</span>
+                  </div>
+                </label>
+                <label class="radio-option" data-thesis-type="social">
+                  <input type="radio" name="thesisType" value="social" />
+                  <div class="radio-dot"></div>
+                  <div class="radio-option-text">
+                    <span class="opt-label">Social Sciences (Sociology, Political Science, Economics, Psychology)</span>
+                    <span class="opt-desc">Theoretical frameworks, empirical or qualitative methods</span>
+                  </div>
+                </label>
+                <label class="radio-option" data-thesis-type="humanities">
+                  <input type="radio" name="thesisType" value="humanities" />
+                  <div class="radio-dot"></div>
+                  <div class="radio-option-text">
+                    <span class="opt-label">Humanities (Literature, History, Philosophy, Linguistics)</span>
+                    <span class="opt-desc">Argumentative essays, textual analysis, archival research</span>
+                  </div>
+                </label>
+              </div>
+              <div class="alert alert-gold mt-16">
+                <span>✦</span>
+                <span>Your thesis type determines which section templates and journal recommendations are highlighted for you.</span>
+              </div>
+            </div>
+
+            <!-- STEP 2: Content Input -->
+            <div class="wizard-pane" id="pane-2">
+              <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:6px">Step 2</div>
+              <h3 style="margin-bottom:16px">Paste your thesis sections</h3>
+
+              <div class="form-group">
+                <label for="thesisTitle">Thesis Title</label>
+                <input type="text" id="thesisTitle" placeholder="Enter your thesis title..." />
+              </div>
+
+              <div class="form-group">
+                <label for="thesisAbstract">Abstract <span style="color:var(--text-muted);font-weight:400">(paste from thesis)</span></label>
+                <textarea id="thesisAbstract" rows="4" placeholder="Paste your thesis abstract here..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="thesisIntro">Introduction / Background</label>
+                <textarea id="thesisIntro" rows="4" placeholder="Paste introduction or background section..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="thesisMethods">Methods / Methodology</label>
+                <textarea id="thesisMethods" rows="4" placeholder="Paste methods section..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="thesisResults">Results / Findings</label>
+                <textarea id="thesisResults" rows="4" placeholder="Paste results or findings..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="thesisDiscussion">Discussion / Conclusion</label>
+                <textarea id="thesisDiscussion" rows="4" placeholder="Paste discussion or conclusion..."></textarea>
+              </div>
+
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:var(--text-muted);padding-top:8px;border-top:1px solid var(--border)">
+                <span>Fields are optional — add as much or as little as available</span>
+              </div>
+            </div>
+
+            <!-- STEP 3: Journal Selection -->
+            <div class="wizard-pane" id="pane-3">
+              <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:6px">Step 3</div>
+              <h3 style="margin-bottom:16px">Select your target journal</h3>
+
+              <div class="form-group">
+                <label for="journalSelect">Target Journal</label>
+                <select id="journalSelect">
+                  <option value="">— Loading journals... —</option>
+                </select>
+              </div>
+
+              <div id="journalPreviewCard" class="card hidden" style="margin-top:8px;padding:16px"></div>
+
+              <div class="alert alert-gold mt-16">
+                <span>💡</span>
+                <div>
+                  <strong>Choosing your journal:</strong> Consider your findings' scope, your discipline's prestige hierarchy, and whether open access is required. High-IF journals (Nature, NEJM) require transformative findings; journals like PLOS ONE accept technically sound work without novelty requirements.
+                </div>
+              </div>
+
+              <div style="margin-top:16px">
+                <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px">Quick Tier Guide:</div>
+                <div style="display:flex;flex-direction:column;gap:6px;font-size:0.82rem">
+                  <div style="display:flex;align-items:center;gap:8px"><span class="tier-badge tier-elite">⭐ Elite</span><span style="color:var(--text-secondary)">IF 10+ — Transformative, high-significance findings required</span></div>
+                  <div style="display:flex;align-items:center;gap:8px"><span class="tier-badge tier-high">◆ High</span><span style="color:var(--text-secondary)">IF 5–10 — Strong, original contribution expected</span></div>
+                  <div style="display:flex;align-items:center;gap:8px"><span class="tier-badge tier-moderate">● Reputable</span><span style="color:var(--text-secondary)">IF 2–5 — Sound methodology; ideal for first publications</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 4: Generate -->
+            <div class="wizard-pane" id="pane-4">
+              <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:6px">Step 4</div>
+              <h3 style="margin-bottom:16px">Ready to generate your manuscript outline</h3>
+
+              <div class="alert alert-green mb-16">
+                <span>✓</span>
+                <span>All steps complete. Click <strong>Generate Manuscript</strong> to create your structured outline, conversion checklist, and journal-specific guidance.</span>
+              </div>
+
+              <div style="background:rgba(201,164,86,0.04);border:1px solid var(--border-gold);border-radius:var(--radius-md);padding:16px;font-size:0.85rem;color:var(--text-secondary)">
+                <div style="color:var(--gold-light);font-weight:600;margin-bottom:10px">What you'll receive:</div>
+                <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+                  <li style="display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Manuscript section outline pre-filled with your content</li>
+                  <li style="display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Live word count vs. journal limits</li>
+                  <li style="display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Personalised conversion checklist</li>
+                  <li style="display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Journal-specific formatting requirements</li>
+                  <li style="display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Abstract structure requirements</li>
+                </ul>
+              </div>
+
+              <div class="quote-block mt-24">
+                <blockquote>"The difference between a thesis and a manuscript is not the quality of the science — it is the art of telling the right story to the right audience."</blockquote>
+                <cite>— Scriptorium Editorial Philosophy</cite>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="wizard-nav">
+            <button class="btn btn-ghost btn-sm" data-prev id="prevBtn">← Previous</button>
+            <button class="btn btn-primary btn-sm" data-next id="nextBtn">Next Step →</button>
+          </div>
+
         </div>
       </div>
-    </section>
 
-    <!-- ===== WHY US ===== -->
-    <section class="why-us" aria-label="Why choose B&amp;C Consult">
-      <div class="container why-inner">
-        <div class="why-text reveal">
-          <span class="eyebrow">Why B&amp;C Consult</span>
-          <h2>Expertise You Can Trust</h2>
-          <ul class="why-list">
-            <li><span class="why-icon" aria-hidden="true">✓</span><div><strong>PhD-Qualified Writers</strong><p>Every project is handled by subject-matter experts with advanced academic credentials.</p></div></li>
-            <li><span class="why-icon" aria-hidden="true">✓</span><div><strong>100% Original Work</strong><p>All documents are written from scratch and pass rigorous plagiarism checks before delivery.</p></div></li>
-            <li><span class="why-icon" aria-hidden="true">✓</span><div><strong>Confidential &amp; Secure</strong><p>Your data and documents are handled with strict confidentiality at every stage of the process.</p></div></li>
-            <li><span class="why-icon" aria-hidden="true">✓</span><div><strong>On-Time Delivery</strong><p>We respect your deadlines — urgent turnarounds are available on request.</p></div></li>
-          </ul>
+      <!-- RIGHT: Output Panel -->
+      <div class="output-panel" id="outputPanel">
+        <div class="output-placeholder">
+          <div class="output-icon">📃</div>
+          <h3 style="font-family:var(--font-serif);margin-bottom:10px;color:var(--text-muted)">Your manuscript will appear here</h3>
+          <p style="font-size:0.85rem;max-width:300px;margin:0 auto">Complete the four-step wizard on the left and click <strong style="color:var(--gold-light)">Generate Manuscript</strong> to see your structured outline, word count analysis, and conversion checklist.</p>
         </div>
-        <div class="why-visual reveal" aria-hidden="true">
-          <div class="why-card-stack">
-            <div class="wcard wc1"><span class="wc-num">01</span><p>Thesis &amp; Dissertations</p></div>
-            <div class="wcard wc2"><span class="wc-num">02</span><p>Research &amp; Analysis</p></div>
-            <div class="wcard wc3"><span class="wc-num">03</span><p>Professional Documents</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     JOURNAL LIBRARY
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="journals">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Journal Library</span>
+      <h2>32+ Leading Academic Journals</h2>
+      <p>Browse journals by discipline, search by name or publisher, and click any journal for full guidelines, manuscript structure, and thesis conversion tips.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="journal-filters" id="journalFilters">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="journalSearch" placeholder="Search journals..." aria-label="Search journals" />
+      </div>
+    </div>
+
+    <span class="journals-count" id="journalsCount">Loading journals...</span>
+
+    <div class="grid-auto" id="journalsGrid">
+      <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted)">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CITATION STYLES
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="ref-styles">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Reference Formatting</span>
+      <h2>Citation Styles Reference</h2>
+      <p>Every major academic citation style used by leading journals, with formatted examples to guide your conversion.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="grid-2" style="gap:14px">
+      <div class="ref-card">
+        <div class="ref-name">Nature Style <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(Nature family, PNAS, PLOS)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Numbered; superscript or inline; minimal author info</div>
+        <div class="ref-example">1. Smith, J. A., Jones, B. &amp; Williams, C. K. Article title in sentence case. <em>Nature</em> <strong>592</strong>, 41–47 (2021). https://doi.org/xxx</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-name">Vancouver / NLM <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(NEJM, Lancet, BMJ, JAMA)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Numbered in order of appearance; abbreviated journal names</div>
+        <div class="ref-example">1. Smith JA, Jones B, Williams CK. Article title. <em>N Engl J Med.</em> 2021;384(8):701-11. doi:10.1056/NEJMxxx</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-name">APA 7th Edition <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(Psychology, Social Sciences)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Author-date; hanging indent; DOI required when available</div>
+        <div class="ref-example">Smith, J. A., Jones, B., &amp; Williams, C. K. (2021). Article title in sentence case. <em>Journal Name</em>, <em>45</em>(3), 201–215. https://doi.org/xxx</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-name">Chicago Notes-Bibliography <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(Humanities, History, Law)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Footnotes + bibliography; full author names; title case</div>
+        <div class="ref-example">Smith, John A., Barbara Jones, and Carl K. Williams. "Article Title." <em>Journal Name</em> 45, no. 3 (2021): 201–215. https://doi.org/xxx</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-name">MLA 9th Edition <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(Literature, Language Studies)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Author-page; Works Cited; containers concept</div>
+        <div class="ref-example">Smith, John A., et al. "Article Title." <em>Journal Name</em>, vol. 45, no. 3, 2021, pp. 201–215. <em>JSTOR</em>, https://doi.org/xxx</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-name">IEEE Style <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(Engineering, Computer Science)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Numbered in brackets; abbreviated journal titles; initials first</div>
+        <div class="ref-example">[1] J. A. Smith, B. Jones, and C. K. Williams, "Article title," <em>IEEE Trans. Neural Netw. Learn. Syst.</em>, vol. 45, no. 3, pp. 201–215, Mar. 2021, doi: xxx</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-name">ACS Style <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(Chemistry, Chemical Engineering)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Numbered; abbreviated journal names in italics; year bold</div>
+        <div class="ref-example">Smith, J. A.; Jones, B.; Williams, C. K. <em>J. Am. Chem. Soc.</em> <strong>2021</strong>, <em>143</em>, 1234–1240. DOI: 10.1021/xxx</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-name">AMA Style <span style="font-size:0.78rem;color:var(--text-muted);font-weight:400">(JAMA, Medical journals)</span></div>
+        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px">Numbered; abbreviated journal names; all authors listed up to 6</div>
+        <div class="ref-example">Smith JA, Jones B, Williams CK, et al. Article title. <em>JAMA.</em> 2021;325(8):701-711. doi:10.1001/jama.xxx</div>
+      </div>
+    </div>
+
+    <div class="alert alert-gold mt-24">
+      <span>📌</span>
+      <div><strong>Pro tip:</strong> Reference management software (Zotero, Mendeley, EndNote) can automatically reformat an entire bibliography from one citation style to another. Always verify auto-formatted citations against official journal style guides.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="about" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="grid-2" style="gap:60px;align-items:center">
+      <div>
+        <span style="font-size:0.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px">About Scriptorium</span>
+        <h2 style="margin-bottom:20px">The Art &amp; Craft of Scholarly Transformation</h2>
+        <p style="margin-bottom:16px">The word <em>scriptorium</em> (Latin: <em>scribere</em>, to write) once described the sacred chambers of medieval monasteries where monks labored in candlelight, copying and illuminating manuscripts for the ages. Today, the act of scholarly writing carries no less weight — a doctoral thesis represents years of original thought demanding its rightful place in the world's literature.</p>
+        <p style="margin-bottom:16px">Scriptorium was built for the scholar who has completed that arduous journey and now faces a different challenge: reshaping a 300-page dissertation into a focused, 4,000-word manuscript suited for a specific journal's exacting requirements. The knowledge is there — the translation is the art.</p>
+        <div class="quote-block">
+          <blockquote>"A thesis proves you can do research. A manuscript proves you can communicate it."</blockquote>
+          <cite>— Academic publishing tradition</cite>
+        </div>
+        <p>Every journal in this library has been documented with real submission guidelines, actual word limits, and specific structural requirements. The conversion tips are drawn from the accumulated wisdom of scholarly publishing — not generic advice, but targeted guidance for each publication's unique expectations.</p>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3 style="margin-bottom:14px;font-size:1rem">Disciplines Covered</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Life Sciences</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Medicine &amp; Health</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Physical Sciences</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Engineering &amp; Technology</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Social Sciences</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Humanities</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Psychology</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Computer Science</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Interdisciplinary</span>
+            <span style="padding:5px 12px;background:rgba(201,164,86,0.08);border:1px solid var(--border-gold);border-radius:4px;font-size:0.8rem;color:var(--gold)">Open Access</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:14px;font-size:1rem">Elite Journals Featured</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:0.85rem">
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-primary)">Nature</span><span style="color:var(--gold)">IF 69.5</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-primary)">New England Journal of Medicine</span><span style="color:var(--gold)">IF 176.1</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-primary)">Cell</span><span style="color:var(--gold)">IF 66.9</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-primary)">Science</span><span style="color:var(--gold)">IF 56.9</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-primary)">Nature Energy</span><span style="color:var(--gold)">IF 60.9</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0"><span style="color:var(--text-primary)">The Lancet</span><span style="color:var(--gold)">IF 168.9</span></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== PROCESS ===== -->
-    <section class="section" id="process">
-      <div class="container">
-        <div class="section-hd">
-          <span class="eyebrow dark">Simple &amp; Transparent</span>
-          <h2>How It Works</h2>
-          <p>Four easy steps from your first inquiry to final delivery.</p>
-        </div>
-        <ol class="process-steps">
-          <li class="step reveal"><div class="step-num" aria-hidden="true">01</div><h3>Submit Your Inquiry</h3><p>Fill in the inquiry form with your service needs, academic level, subject area, and deadline.</p></li>
-          <li class="step-arrow reveal" aria-hidden="true">→</li>
-          <li class="step reveal"><div class="step-num" aria-hidden="true">02</div><h3>Receive a Quote</h3><p>We review your requirements and send a detailed, personalised quote within 24 hours.</p></li>
-          <li class="step-arrow reveal" aria-hidden="true">→</li>
-          <li class="step reveal"><div class="step-num" aria-hidden="true">03</div><h3>Make Payment</h3><p>Secure your order by paying online via Stripe — all major cards accepted worldwide.</p></li>
-          <li class="step-arrow reveal" aria-hidden="true">→</li>
-          <li class="step reveal"><div class="step-num" aria-hidden="true">04</div><h3>Receive Delivery</h3><p>Your completed document is delivered to your inbox by the agreed deadline, with revisions included.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ===== PRICING ===== -->
-    <section class="section pricing-section" id="pricing">
-      <div class="container">
-        <div class="section-hd">
-          <span class="eyebrow dark">Transparent Pricing</span>
-          <h2>Service Packages</h2>
-          <p>Starting prices for our most popular services. <a href="#inquire">Get in touch</a> for a custom quote.</p>
-        </div>
-        <div class="pricing-grid">
-          <div class="price-card reveal">
-            <div class="price-tier">Starter</div>
-            <div class="price-amount"><span class="price-currency">$</span>99<span class="price-freq">/service</span></div>
-            <ul class="price-features">
-              <li>Proofreading &amp; editing (up to 5,000 words)</li>
-              <li>Citation &amp; referencing check</li>
-              <li>Single chapter review</li>
-              <li>1 revision round included</li>
-              <li>Delivery in 5–7 days</li>
-            </ul>
-            <a href="https://buy.stripe.com/YOUR_STARTER_PAYMENT_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy">Pay Now</a>
-          </div>
-          <div class="price-card price-featured reveal">
-            <div class="price-badge">Most Popular</div>
-            <div class="price-tier">Professional</div>
-            <div class="price-amount"><span class="price-currency">$</span>349<span class="price-freq">/service</span></div>
-            <ul class="price-features">
-              <li>Research paper or thesis chapter</li>
-              <li>Full literature review</li>
-              <li>Data analysis &amp; reporting</li>
-              <li>3 revision rounds included</li>
-              <li>Delivery in 7–14 days</li>
-            </ul>
-            <a href="https://buy.stripe.com/YOUR_PROFESSIONAL_PAYMENT_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Pay Now</a>
-          </div>
-          <div class="price-card reveal">
-            <div class="price-tier">Premium</div>
-            <div class="price-amount"><span class="price-currency">$</span>799<span class="price-freq">+</span></div>
-            <ul class="price-features">
-              <li>Full thesis or dissertation</li>
-              <li>All chapters &amp; appendices</li>
-              <li>Statistical analysis included</li>
-              <li>Unlimited revisions (30 days)</li>
-              <li>Priority support &amp; delivery</li>
-            </ul>
-            <a href="https://buy.stripe.com/YOUR_PREMIUM_PAYMENT_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy">Pay Now</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== INQUIRY FORM ===== -->
-    <section class="section inquiry-section" id="inquire">
-      <div class="container">
-        <div class="section-hd">
-          <span class="eyebrow">Get in Touch</span>
-          <h2>Submit an Inquiry</h2>
-          <p>Tell us about your project and we'll respond within 24 hours with a tailored quote.</p>
-        </div>
-        <div class="inquiry-layout">
-          <form class="inquiry-form reveal" id="inquiryForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
-            <div class="form-row">
-              <div class="form-group"><label for="fullName">Full Name <span class="req" aria-hidden="true">*</span></label><input type="text" id="fullName" name="fullName" placeholder="Dr. Jane Smith" autocomplete="name" required /></div>
-              <div class="form-group"><label for="email">Email Address <span class="req" aria-hidden="true">*</span></label><input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required /></div>
-            </div>
-            <div class="form-row">
-              <div class="form-group"><label for="phone">Phone Number <span class="optional">(optional)</span></label><input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" /></div>
-              <div class="form-group"><label for="service">Service Required <span class="req" aria-hidden="true">*</span></label><select id="service" name="service" required><option value="">Select a service…</option><option value="Thesis Writing">Thesis Writing</option><option value="Dissertation Support">Dissertation Support</option><option value="Research Paper">Research Paper</option><option value="Literature Review">Literature Review</option><option value="Data Analysis">Data Analysis</option><option value="Professional Report">Professional Report</option><option value="Research Proposal">Research Proposal</option><option value="Proofreading &amp; Editing">Proofreading &amp; Editing</option><option value="Other">Other</option></select></div>
-            </div>
-            <div class="form-row">
-              <div class="form-group"><label for="level">Academic / Professional Level <span class="req" aria-hidden="true">*</span></label><select id="level" name="level" required><option value="">Select level…</option><option value="Undergraduate">Undergraduate</option><option value="Postgraduate (Masters)">Postgraduate (Masters)</option><option value="PhD / Doctoral">PhD / Doctoral</option><option value="Professional / Corporate">Professional / Corporate</option><option value="Other">Other</option></select></div>
-              <div class="form-group"><label for="deadline">Deadline <span class="req" aria-hidden="true">*</span></label><input type="date" id="deadline" name="deadline" required /></div>
-            </div>
-            <div class="form-row">
-              <div class="form-group"><label for="subject">Subject / Topic Area <span class="req" aria-hidden="true">*</span></label><input type="text" id="subject" name="subject" placeholder="e.g. Public Health, Business Strategy" required /></div>
-              <div class="form-group"><label for="pages">Approx. Pages / Word Count <span class="optional">(optional)</span></label><input type="text" id="pages" name="pages" placeholder="e.g. 50 pages / 12,000 words" /></div>
-            </div>
-            <div class="form-group full"><label for="description">Project Description <span class="req" aria-hidden="true">*</span></label><textarea id="description" name="description" rows="5" placeholder="Describe your project, research question, specific requirements, formatting guidelines, and any supporting materials…" required></textarea></div>
-            <div class="form-group full"><label for="referral">How did you hear about us? <span class="optional">(optional)</span></label><select id="referral" name="referral"><option value="">Select…</option><option value="Search Engine">Google / Search Engine</option><option value="Referral">Referral from a colleague</option><option value="Social Media">Social Media</option><option value="Previous client">Previous client</option><option value="Other">Other</option></select></div>
-            <button type="submit" class="btn btn-gold btn-lg submit-btn"><span class="btn-text">Submit Inquiry</span><span class="btn-spinner" hidden aria-hidden="true"></span></button>
-            <p class="form-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>We respond within 24 hours. Your information is kept strictly confidential.</p>
-          </form>
-          <aside class="inquiry-sidebar">
-            <div class="sidebar-card reveal">
-              <h3>Contact Us Directly</h3>
-              <ul class="contact-list">
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg><a href="mailto:info@bandcconsult.com">info@bandcconsult.com</a></li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.38 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+15550000000">+1 (555) 000-0000</a></li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>Available Worldwide</span></li>
-              </ul>
-            </div>
-            <div class="sidebar-card reveal">
-              <h3>Secure Payments</h3>
-              <p>We accept all major debit and credit cards via Stripe — industry-leading encryption on every transaction.</p>
-              <div class="payment-badges"><span class="badge">Visa</span><span class="badge">Mastercard</span><span class="badge">Amex</span><span class="badge">Discover</span></div>
-              <div class="stripe-badge"><svg viewBox="0 0 60 25" fill="none" aria-hidden="true"><text x="0" y="20" font-size="18" fill="#6772E5" font-family="Helvetica,sans-serif" font-weight="bold">stripe</text></svg><span>Powered by Stripe</span></div>
-            </div>
-            <div class="sidebar-card reveal">
-              <h3>Typical Response Times</h3>
-              <ul class="turnaround-list">
-                <li><span class="ta-service">Proofreading</span><span class="ta-time">24–48 hrs</span></li>
-                <li><span class="ta-service">Research Paper</span><span class="ta-time">3–7 days</span></li>
-                <li><span class="ta-service">Thesis Chapter</span><span class="ta-time">7–14 days</span></li>
-                <li><span class="ta-service">Full Thesis</span><span class="ta-time">3–6 weeks</span></li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PAYMENT SECTION ===== -->
-    <section class="section pay-section" id="pay">
-      <div class="container">
-        <div class="section-hd">
-          <span class="eyebrow dark">Ready to Pay?</span>
-          <h2>Make a Payment</h2>
-          <p>Pay directly via a package below, or use the unique payment link included in your custom quote email.</p>
-        </div>
-        <div class="pay-layout reveal">
-          <div class="pay-info">
-            <h3>Payment Process</h3>
-            <div class="pay-step"><span class="pay-step-num" aria-hidden="true">1</span><p><strong>Submit your inquiry</strong> above and receive a personalised quote by email within 24 hours.</p></div>
-            <div class="pay-step"><span class="pay-step-num" aria-hidden="true">2</span><p><strong>Accept the quote</strong> and use the unique Stripe payment link included in your quote email.</p></div>
-            <div class="pay-step"><span class="pay-step-num" aria-hidden="true">3</span><p><strong>Or choose a package</strong> from the options below and pay instantly — no inquiry needed for standard packages.</p></div>
-            <div class="pay-security"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><p>All transactions are protected by 256-bit SSL encryption via Stripe. We never store your card details.</p></div>
-          </div>
-          <div class="pay-direct">
-            <h3>Pay a Standard Package</h3>
-            <div class="pay-options">
-              <a href="https://buy.stripe.com/YOUR_STARTER_PAYMENT_LINK" target="_blank" rel="noopener noreferrer" class="pay-option"><div class="po-details"><span class="po-name">Starter Package</span><span class="po-desc">Editing &amp; proofreading</span></div><span class="po-price">$99</span><span class="po-arrow" aria-hidden="true">→</span></a>
-              <a href="https://buy.stripe.com/YOUR_PROFESSIONAL_PAYMENT_LINK" target="_blank" rel="noopener noreferrer" class="pay-option pay-option-featured"><div class="po-details"><span class="po-name">Professional Package</span><span class="po-desc">Research paper or chapter</span></div><span class="po-price">$349</span><span class="po-arrow" aria-hidden="true">→</span></a>
-              <a href="https://buy.stripe.com/YOUR_PREMIUM_PAYMENT_LINK" target="_blank" rel="noopener noreferrer" class="pay-option"><div class="po-details"><span class="po-name">Premium Package</span><span class="po-desc">Full thesis or dissertation</span></div><span class="po-price">$799+</span><span class="po-arrow" aria-hidden="true">→</span></a>
-            </div>
-            <p class="pay-note">Need a different amount? <a href="#inquire">Submit an inquiry</a> for a custom quote with a personalised payment link.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-inner">
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
       <div class="footer-brand">
-        <a class="logo logo-light" href="#home" aria-label="B&amp;C Consult home"><span class="logo-brand">B<span class="logo-amp">&amp;</span>C</span><span class="logo-name">Consult</span></a>
-        <p>Expert academic and professional research writing services. Trusted by students, researchers, and organisations worldwide.</p>
+        <div class="logo" style="margin-bottom:16px">
+          <div class="logo-icon">📜</div>
+          <div>
+            <span class="logo-text">Scriptorium</span>
+            <span class="logo-sub">Academic Manuscript Forge</span>
+          </div>
+        </div>
+        <p>Transforming doctoral research into publication-ready manuscripts since scholars first put pen to parchment. Built for the rigorous, the curious, and the relentlessly publishing.</p>
       </div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Thesis Writing</a></li><li><a href="#services">Dissertation Support</a></li><li><a href="#services">Research Papers</a></li><li><a href="#services">Data Analysis</a></li><li><a href="#services">Professional Reports</a></li><li><a href="#services">Proofreading &amp; Editing</a></li></ul></div>
-      <div class="footer-col"><h4>Company</h4><ul><li><a href="#process">How It Works</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#inquire">Submit Inquiry</a></li><li><a href="#pay">Make a Payment</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:info@bandcconsult.com">info@bandcconsult.com</a></li><li><a href="tel:+15550000000">+1 (555) 000-0000</a></li></ul><div class="footer-secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Payments via Stripe</span></div></div>
-    </div>
-    <div class="footer-bottom"><div class="container footer-bottom-inner"><p>&copy; 2026 B&amp;C Consult. All rights reserved.</p><p>Secure payments powered by <strong>Stripe</strong></p></div></div>
-  </footer>
 
-  <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
-  <script src="script.js"></script>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <button class="footer-link" data-nav="features">Features</button>
+        <button class="footer-link" data-nav="how-it-works">How It Works</button>
+        <button class="footer-link" data-nav="converter">Converter Tool</button>
+        <button class="footer-link" data-nav="about">About</button>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Journal Library</div>
+        <button class="footer-link" onclick="filterCategory('life-sciences')">Life Sciences</button>
+        <button class="footer-link" onclick="filterCategory('medicine')">Medicine</button>
+        <button class="footer-link" onclick="filterCategory('engineering')">Engineering</button>
+        <button class="footer-link" onclick="filterCategory('humanities')">Humanities</button>
+        <button class="footer-link" onclick="filterCategory('open-access')">Open Access</button>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <button class="footer-link" data-nav="ref-styles">Citation Styles</button>
+        <button class="footer-link" onclick="openJournalModal('plos-one')">PLOS ONE Guide</button>
+        <button class="footer-link" onclick="openJournalModal('nature-comms')">Nature Comms Guide</button>
+        <button class="footer-link" onclick="openJournalModal('elife')">eLife Guide</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 Scriptorium. For scholarly use.</span>
+      <span class="footer-latin">In verbis veritas — In words, truth</span>
+      <span>Built with care for scholars worldwide</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     JOURNAL MODAL
+═══════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="journalModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-header" id="modalHeader">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- Toast notification -->
+<div class="toast" id="globalToast"></div>
+
+<script src="journals-data.js"></script>
+<script src="app.js"></script>
+<script>
+  // Footer nav shortcut
+  function filterCategory(cat) {
+    state.activeCategory = cat;
+    document.getElementById('journals')?.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      const btn = document.querySelector(`[data-cat="${cat}"]`);
+      if (btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderJournals(cat, '');
+      }
+    }, 600);
+  }
+
+  // Step counter update
+  document.querySelectorAll('[data-next], [data-prev]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setTimeout(() => {
+        const sc = document.getElementById('stepCounter');
+        if (sc) sc.textContent = `Step ${state.currentStep} of ${state.totalSteps}`;
+        const prevBtn = document.getElementById('prevBtn');
+        if (prevBtn) prevBtn.style.visibility = state.currentStep === 1 ? 'hidden' : 'visible';
+        const nextBtn = document.getElementById('nextBtn');
+        if (nextBtn) nextBtn.textContent = state.currentStep === state.totalSteps ? '✦ Generate Manuscript' : 'Next Step →';
+      }, 10);
+    });
+  });
+
+  // Hide prev button on start
+  window.addEventListener('DOMContentLoaded', () => {
+    const prevBtn = document.getElementById('prevBtn');
+    if (prevBtn) prevBtn.style.visibility = 'hidden';
+  });
+</script>
 </body>
 </html>
